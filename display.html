@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script>
+        function display(decision) {
+            if (decision == "firstbox") {
+                "the text related to first box should be displayed";
+            } else if (decision == "secondbox") {
+                "Text related to 2nd box.";
+            } else {
+                "blank";
+            }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="button" id="firstbox" value="firstbox" onclick="display('firstbox')" /><br>
+        <input type="button" id="secondbox" value="secondbox" onclick="display('secondbox')" /><br></form>
+</body>
+
+</html>

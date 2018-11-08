@@ -1,0 +1,52 @@
+<html>
+
+<head></head>
+
+<body>
+    <marquee>
+        <h1>Calculator</h1>
+    </marquee>
+    <br/>
+    <script>
+        function random() {
+            var y = document.getElementById("a").value
+            var j = Math.random(y);
+            document.getElementById("p1").innerHTML = j;
+        }
+
+        function square() {
+            var y = document.getElementById("a").value
+            var k = Math.pow(y, 2);
+            document.getElementById("p2").innerHTML = k;
+        }
+
+        function squareroot() {
+            var y = document.getElementById("a").value
+            var l = Math.sqrt(y);
+            document.getElementById("p3").innerHTML = l;
+        }
+
+        function pow() {
+            var y = document.getElementById("a").value
+            var z = document.getElementById("b").value
+            var x = Math.pow(y, z);
+            document.getElementById("p4").innerHTML = x;
+        }
+    </script>
+
+    <body>
+        <p id="p1"> </p><br>
+        <p id="p2"> </p><br>
+        <p id="p3"> </p><br>
+        <p id="p4"> </p><br> Enter a number:
+        <input type="text" id="a"><br> Enter value for power:
+        <input type="text" id="b"><br>
+        <input type="button" id="c" value="random" onclick="random()"><br>
+        <input type="button" id="d" value="square" onclick="square()"><br>
+        <input type="button" id="e" value="squareroot" onclick="squareroot()"><br>
+        <input type="button" id="f" value="power" onclick="pow()"><br>
+        <input type="button" id="g" value="maximum" onclick="max()"><br>
+        <input type="button" id="h" value="minimum" onclick="min()"><br>
+    </body>
+
+</html>

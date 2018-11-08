@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script>
+        function checkemail() {
+            var email = document.getElementById("p3").value;
+            var n = email.match("[a-z]{0,30}[.]{0,2}[_]{0,3}[0-9]{0,20}[@][a-z]{3,10}[.][a-z]{2,3}")
+            if (email == n) {
+                alert("valid emailid");
+                //return true;
+            }
+            else {
+                alert("invalid email id");
+                // return false;
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <b><h1>Name:</b><input id="p3" type="text" name="textbox" value="" size="30"><br></h1>
+        <button onclick="checkemail();">Submit Email</button>
+    </form>
+
+</body>
+
+</html>

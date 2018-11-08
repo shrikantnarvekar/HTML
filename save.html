@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function checknum()
+    {
+        var num=document.getElementById("p1").value;
+        
+    
+    if(isNaN(num))
+    {
+        alert("numbers only");
+        return false;
+    }
+    else
+    {
+        alert(num);
+        return true;
+    }
+    }
+     function checkstring()
+    {
+        var string=document.getElementById("p2").value;
+        
+    
+    
+    if(string==""||string==" ")
+    {
+       alert("Name is Mandotory")
+        return false;
+    }
+    else
+    {
+        //alert(string)
+        if(isNaN(string))
+    {
+       alert(string)
+        return true;
+    }
+    else
+    {
+         alert("string only");
+        return false;
+    }
+    }
+    }
+
+    function checkemail() {
+            var email = document.getElementById("p3").value;
+            var n = email.match("[a-z]{0,30}[.]{0,2}[_]{0,3}[0-9]{0,20}[@][a-z]{3,10}[.][a-z]{2,3}")
+            if (email == n) {
+                alert("valid emailid");
+                //return true;
+            }
+            else {
+                alert("invalid email id");
+                // return false;
+
+            }
+        }
+    function password1()
+    {
+        var box1 = document.getElementById("p4").value;
+         p4.setAttribute('type','password');   
+        var box2 = document.getElementById("p5").value;
+        p4.setAttribute('type','password');  
+            if (box1==box2) {
+                alert("valid password");
+                //return true;
+            }
+            else {
+                alert("invalid password ");
+                // return false;
+
+            }
+    }
+    
+    </script>
+</head>
+<body>
+    <form>
+    <b><h1>RollNO:</b><input id="p1" type="text" name="textbox" value="" size="30" ><br></h1>
+    <button onclick="checknum();">Submit number</button>
+     <b><h1>Name:</b><input id="p2" type="text" name="textbox" value="" size="30" ><br></h1>
+     <button onclick="checkstring();">Submit Name</button>
+     <b><h1>EmailId:</b><input id="p3" type="text" name="textbox" value="" size="30" ><br></h1>
+     <button >Submit Email</button>
+     <b><h1>Password:</b><input id="p4" type="text" name="textbox" value="" size="30" ><br></h1>
+     <b><h1>Confirm password:</b><input id="p5" type="text" name="textbox" value="" size="30" ><br></h1>
+     <button onclick="password1();">Submit Email</button>
+    </form>
+</body>
+</html>

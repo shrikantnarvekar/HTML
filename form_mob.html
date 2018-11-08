@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <script>
+        function mobile() {
+            var num = document.getElementById("mob").value;
+            if (isNaN(num)) {
+                alert("Pls enter a number");
+                return false;
+            } else if ((num.toString().length) > 10) {
+
+                alert("The no: must less or equal to 10");
+            } else if (num == null || num == "") {
+                alert("The phone no: is mandatory");
+            } else {
+                return true;
+            }
+        }
+
+        function name1() {
+            var name = document.getElementById("name").value;
+            if (name == null || name == "") {
+                alert("Name is mandatory");
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function val_email() {
+            var x = document.getElementById("email_val").value;
+            var a = x.indexOf("@");
+            var b = x.lastIndexOf(".");
+            if (a == 0 || x == null || x == "") {
+                alert("The email must not start from '@'");
+            }
+            if (b < a + 2) {
+                alert("Their must at least 2 characters after '.' symbol");
+            } else {
+                alert("The Email is valid");
+            }
+        }
+
+        function passwd() {
+            var f1 = document.getElementById("pass1").value;
+            var f2 = document.getElementById("pass2").value;
+
+            if (f1 == f2) {
+                return true;
+            }
+            if (f1.length <= 6 && f2.length <= 6) {
+                alert("password must contain atleast 6 characters");
+            } else {
+                alert("password must be same!");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        Mobile No:<input type="text" id="mob"><br><br> Name:
+        <input type="text" id="name"><br><br> Email: <input type="text" id="email_val" name="email"><br/><br> Enter password: <input type="password" id="pass1" name="email"><br/><br> Re-Enter paswword: <input type="password" id="pass2" name="email"><br/><br>
+
+    </form>
+    <button id="btn" onclick="mobile();">Submit_number</button><br><br>
+    <button id="btn" onclick="name1();">Submit_name</button><br><br>
+    <button id="btn" onclick="val_email();">E-mail</button><br><br>
+    <button id="btn" onclick="passwd();">Submit_password</button><br><br>
+
+</body>
+
+</html>

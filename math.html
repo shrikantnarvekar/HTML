@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Math examples</title>
+    <script>
+        function power(){
+            document.getElementById("p1").innerHTML+=(Math.pow(5,5));
+        }
+        function square_root(){
+            document.getElementById("p2").innerHTML+=(Math.sqrt(144));
+        }
+        function round(){
+            document.getElementById("p3").innerHTML+=(Math.round(999.4));
+        }
+        function ceil(){
+            document.getElementById("p4").innerHTML+=(Math.ceil(999.4));
+        }
+        function floor(){
+            document.getElementById("p5").innerHTML+=(Math.floor(999.4));
+        }
+        function sin1(){
+            document.getElementById("p6").innerHTML+=(Math.sin(60* Math.PI/180));
+        }
+        function cos1(){
+            document.getElementById("p7").innerHTML+=(Math.cos(60 * Math.PI/180));
+        }
+        function tan1(){
+            document.getElementById("p8").innerHTML+=(Math.tan(60* Math.PI/180));
+        }
+    </script>
+</head>
+<body>
+    <button id="btn1" onclick="power();">Math pow</button>
+    <button id="btn1" onclick="square_root();">Math sqrt</button>
+    <button id="btn1" onclick="round();">Math round</button>
+    <button id="btn1" onclick="ceil();">Math ceil</button>
+    <button id="btn1" onclick="floor();">Math floor</button>
+    <button id="btn1" onclick="sin1();">Math sin</button>
+    <button id="btn1" onclick="cos1();">Math cos</button>
+    <button id="btn1" onclick="tan1();">Math tan</button>
+    <p id="p1">The power of 5 and 5 is------------------</p>
+    <p id="p2">The square root of 144 is----------------</p>
+    <p id="p3">The original no is 999.4 the round is----</p>
+    <p id="p4">The original no is 999.4 the ceil is-----</p>
+    <p id="p5">The original no is 999.4 the floor is----</p>
+    <p id="p6">The sin 60 is equal to-------------------</p>
+    <p id="p7">The cos 60 is equal to-------------------</p>
+    <p id="p8">The tan 60 is equal to-------------------</p>
+</body>
+</html>
